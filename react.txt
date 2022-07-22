@@ -1,0 +1,109 @@
+React is a Javascript library that is used to build web applications and interactive user interfaces for web.
+
+A Library is pre-wriiten reusable snippet like boostrap, that can be reused by the developer to save time and boost more efficiency.
+
+REACT COMPONENTS 
+They are reusable building blocks that are used to form parts of the user interface.
+
+XTICS OF COMPONENTS
+Reusable
+Renders Efficiently
+Nested
+
+TYPES OF COMPONENTS
+Statless Functional Component(js & jsx formats): Javascript functions that returns Html.
+
+Statefull Class Component(js & jsx formats): Javascript es^6 functions that returns Html.
+Class componennts will always use this.props in defining a property.
+
+RULES
+HTML elements must be enclosed in a div.
+
+Xtra Feature in React
+1. import 
+
+//importing Default component
+import ClassComponent from './Components/classComponent';
+
+//importing Named components
+import {ClassComponent1, ClassComponent2} './Components/classComponent';
+
+2a.Default export: Only one default object can be imported but can be renamed.
+
+class ClassComponent extends React.Component{
+  render(){
+    return <p> I am class a component.</p>
+  }
+}
+
+export default ClassComponent
+
+2b.Named export: Multiple objects can be imported but cannot be renamed.
+
+export class ClassComponent1 extends React.Component{
+  render(){
+    return <p> I am class component one.</p>
+  }
+}
+
+export class ClassComponent2 extends React.Component{
+  render(){
+    return <p></p>
+  }
+}
+
+
+Syntax:
+export default nameOfComponent
+
+Syntax:
+import nameOfComponent from href;
+the call the function.
+
+You can rename an imported file when importing it.
+
+Always declare your variables before you return and
+To switch from Javascript to jsx, we put the variable names in curly braces.
+
+function App() {
+  let firstName = "Favour"
+  let lastName = "Nyeche"
+ return (
+   <div>
+     <img src={logo} alt="" width="190" /> 
+       <h1> Good Morning {`${firstName}
+        ${lastName}`}  
+      </h1>
+     </div>
+ );
+}
+
+
+BOOSTRAP
+install: npm install bootstrap
+
+import: import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+
+
+INLINE STYLING 
+Inline styling in Javascript is done by declaring objects styles{}
+
+    const styles = {
+        color: "red"
+    }
+ <h1> Good style={styles}>Man</h1> 
+
+Props data can not be changed, but datas in state can be changed. State only works in a class base component.
+
+Constructor is created with rconst and it goes with a super(), which goes to the React.Component to bring goodies.
+
+constructor(){
+super();
+this.state = {
+
+}
+}
+
+reactjs.org/docs/events.html#supported-events
