@@ -1,1 +1,0 @@
-# Thes are the steps I took in building a Movie App in react
